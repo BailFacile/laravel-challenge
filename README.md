@@ -31,34 +31,42 @@ Documents can usually be updated until they are esigned or sent via post.
 Create RESTful API routes to :
 
 #### **List documents**
+
 **Parameters**
 - Optional `user_id` filter
 - Optional DocumentType `slug` filter
 - Optional `created_at` and `updated_at` greater than filter
 - Limit to 10 results and support pagination
+
 **Response**
 An array of documents and pagination information. Each Document should return properties of its parent DocumentType along with the usual model columns
 
 #### **Create document**
+
 **Parameters**
 - Required `user_id` parameter
 - Required DocumentType `slug` parameter
+
 **Response**
 Should return created Document
 
 #### **ESign document**
+
 **Parameters**
 - Required `document_id` parameter
 - Make sure document can be Esigned
 - Once document is Esigned or Sent via post, it is locked and cannot be updated anymore
+
 **Response**
 Should return updated Document on success or failure is document is locked
 
 #### **Delete document**
+
 **Parameters**
 - Required `document_id` parameter
 - Only document that exists can be deleted
 - Only document that are not locked can be deleted
+
 **Response**
 Should success or failure of request
 ## ⭐ Bonus
@@ -78,7 +86,7 @@ We suggest using [Browsershot](https://github.com/spatie/browsershot) or [Larave
 
 - Your code should be as clean as possible, tested and use Laravel conventions/building blocks.
 
-- We are not testing your front-end skills here, so skip the views and focus on bulding models, API routes, middlewares, CLI commands, etc..
+- We are not testing your front-end skills here, so skip the views and focus on building models, service providers, API routes, middlewares, CLI commands, etc..
 
 - You are free (and even encouraged) to use third-party packages if relevant. If you do, you should explain in your notes why you think each specific package is the best available one for the job.
 
