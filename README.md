@@ -64,19 +64,18 @@ Should return created Document
 
 **➡️ Response**
 
-Should return updated Document on success or failure is document is locked
+Should return updated Document on success or failure if document is locked
 
 #### 4. Delete document
 
 **⚙️ Parameters**
 
 - Required `document_id` parameter
-- Only document that exists can be deleted
 - Only document that are not locked can be deleted
 
 **➡️ Response**
 
-Should success or failure of request
+Should return deleted Document on success or failure of request
 ## ⭐ Bonus
 
 #### Each document type should have corresponding blade template (view)
@@ -94,10 +93,10 @@ We suggest using [Browsershot](https://github.com/spatie/browsershot) or [Larave
 
 - Your code should be as clean as possible, tested and use Laravel conventions/building blocks.
 
-- We are not testing your front-end skills here, so skip the views and focus on building models, service providers, API routes, middlewares, CLI commands, etc..
+- We are not testing your front-end skills here, so skip the views and focus on building models, tests, service providers, API routes, middlewares, CLI commands, etc..
 
 - You are free (and even encouraged) to use third-party packages if relevant. If you do, you should explain in your notes why you think each specific package is the best available one for the job.
 
-- **Your submission should include migrations and seeders with fake data (for users and documents) and existing data (document types provided above).**
+- **Your submission should include unit tests, migrations and seeders with fake data (for users and documents) and existing data (document types provided above).**
 
 - **Please attach a read mefile with any relevant comments, instructions, explanations to your final submission.**
