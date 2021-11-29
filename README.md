@@ -6,19 +6,21 @@
 ## ❓ Some context...
 ### Why this challenge
 
-This coding challenge is designed to assess skills of candidates in backend application development. It is language/framework agnostic, but some instructions are specific for [Laravel](https://www.laravel.com), since it is the technology we use (Laravel with PHP 8).
+This coding challenge is designed to assess the skills of candidates in backend application development. It is language/framework agnostic, but some instructions are specific for [Laravel](https://www.laravel.com), since it is the technology we use (Laravel with PHP 8).
 
 ### How to proceed
 
-Start from a [clean Laravel app](https://laravel.com/docs/8.x/installation) (or your framework of choice) and follow the instructions below.
+- Start from a [clean Laravel app](https://laravel.com/docs/8.x/installation) (or your framework of choice) and follow the instructions below.
 
-Please attach a **read me** file with any relevant comments, instructions, explanations to your final submission.
+- Please attach a **read me** file with any relevant comments, instructions, explanations to your final submission.
 
-Your code should be as clean as possible, tested and use Laravel conventions/building blocks. We are not testing your front-end skills here, so skip the views and focus on bulding models, API routes, middlewares, CLI commands, etc..
+- Your code should be as clean as possible, tested and use Laravel conventions/building blocks.
 
-Your submission should include migrations and seeders with fake data (for users and documents) and existing data (document types provided below).
+- We are not testing your front-end skills here, so skip the views and focus on bulding models, API routes, middlewares, CLI commands, etc..
 
-You are free (and even encouraged) to use third-party packages if relevant. If you do, you should explain in your notes why you think each specific package is the best available one for the job.
+- Your submission should include migrations and seeders with fake data (for users and documents) and existing data (document types provided below).
+
+- You are free (and even encouraged) to use third-party packages if relevant. If you do, you should explain in your notes why you think each specific package is the best available one for the job.
 
 ## 🏁 Challenge
 
