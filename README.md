@@ -30,7 +30,7 @@ Documents can usually be updated until they are esigned or sent via post.
 
 Create RESTful API routes to :
 
-#### **List documents**
+#### 1. List documents
 
 **⚙️ Parameters**
 - Optional `user_id` filter
@@ -41,7 +41,7 @@ Create RESTful API routes to :
 **➡️ Response**
 An array of documents and pagination information. Each Document should return properties of its parent DocumentType along with the usual model columns
 
-#### **Create document**
+#### 2. Create document
 
 **⚙️ Parameters**
 
@@ -52,7 +52,7 @@ An array of documents and pagination information. Each Document should return pr
 
 Should return created Document
 
-#### **ESign document**
+#### 3. ESign document
 
 **⚙️ Parameters**
 
@@ -64,7 +64,7 @@ Should return created Document
 
 Should return updated Document on success or failure is document is locked
 
-#### **Delete document**
+#### 4. Delete document
 
 **⚙️ Parameters**
 
