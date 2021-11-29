@@ -3,25 +3,9 @@
 
 *[BailFacile](https://www.bailfacile.fr) is an online property management platform serving French landlords. We are building a super app for landlords assisting them in the daily management of long-term rentals : draft and e-sign compliant documents, record payments and outgoings and manage tenant relationships, 100% digitally and for a reasonable cost.*
 # BailFacile Laravel Challenge
-## ❓ Some context...
-### Why this challenge
+## ❓ Why this challenge
 
 This coding challenge is designed to assess the skills of candidates in backend application development. It is language/framework agnostic, but some instructions are specific for [Laravel](https://www.laravel.com), since it is the technology we use (Laravel with PHP 8).
-
-### How to proceed
-
-- Start from a [clean Laravel app](https://laravel.com/docs/8.x/installation) (or your framework of choice) and follow the instructions below.
-
-- Please attach a **read me** file with any relevant comments, instructions, explanations to your final submission.
-
-- Your code should be as clean as possible, tested and use Laravel conventions/building blocks.
-
-- We are not testing your front-end skills here, so skip the views and focus on bulding models, API routes, middlewares, CLI commands, etc..
-
-- Your submission should include migrations and seeders with fake data (for users and documents) and existing data (document types provided below).
-
-- You are free (and even encouraged) to use third-party packages if relevant. If you do, you should explain in your notes why you think each specific package is the best available one for the job.
-
 ## 🏁 Challenge
 
 ### 1. Documents and DocumentTypes
@@ -47,28 +31,36 @@ Documents can usually be updated until they are esigned or sent via post.
 Create RESTful API routes to :
 
 #### **List documents**
+**Parameters**
 - Optional `user_id` filter
 - Optional DocumentType `slug` filter
-- Optional `created_at` and `updated_at` greated than filter
+- Optional `created_at` and `updated_at` greater than filter
 - Limit to 10 results and support pagination
-- Each Document should return properties of its parent DocumentType along with the usual model columns.
+**Response**
+An array of documents and pagination information. Each Document should return properties of its parent DocumentType along with the usual model columns
 
 #### **Create document**
+**Parameters**
 - Required `user_id` parameter
 - Required DocumentType `slug` parameter
-- Should return created Document
+**Response**
+Should return created Document
 
 #### **ESign document**
+**Parameters**
 - Required `document_id` parameter
 - Make sure document can be Esigned
 - Once document is Esigned or Sent via post, it is locked and cannot be updated anymore
-- Should return updated Document on success or failure is document is locked
+**Response**
+Should return updated Document on success or failure is document is locked
 
 #### **Delete document**
+**Parameters**
 - Required `document_id` parameter
+- Only document that exists can be deleted
 - Only document that are not locked can be deleted
-- Return success or failure of request
-
+**Response**
+Should success or failure of request
 ## ⭐ Bonus
 
 #### Each document type should have corresponding blade template (view)
@@ -79,3 +71,17 @@ Have a function where you return the corresponding view (in HTML) for each docum
 
 Every time a Document is saved, a PDF of the view should be generated and stored in a user specific folder.
 We suggest using [Browsershot](https://github.com/spatie/browsershot) or [Laravel DomPDF](https://github.com/barryvdh/laravel-dompdf).
+
+## 🧪 How to proceed
+
+- Start from a [clean Laravel app](https://laravel.com/docs/8.x/installation) (or your framework of choice) and follow the instructions below.
+
+- Your code should be as clean as possible, tested and use Laravel conventions/building blocks.
+
+- We are not testing your front-end skills here, so skip the views and focus on bulding models, API routes, middlewares, CLI commands, etc..
+
+- You are free (and even encouraged) to use third-party packages if relevant. If you do, you should explain in your notes why you think each specific package is the best available one for the job.
+
+- **Your submission should include migrations and seeders with fake data (for users and documents) and existing data (document types provided above).**
+
+- **Please attach a read mefile with any relevant comments, instructions, explanations to your final submission.**
