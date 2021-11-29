@@ -33,15 +33,15 @@ Documents belong to a user, are of a specific document_type and can usually be u
 
 ### Available DocumentTypes
   
-| Name | Shortname | Type | Can be esigned | Can be sent via email | Can be sent via post | Can be updated |
-|--|--|--|--|--|--|--|--|
-| **Rental agreement** | `rental_agreement` | `contract` | `true` | `true` | `false` | `true` |
-| **Rent guarantee agreement** | `rental_guarantee_agreement` | `contract` | `true` | `true` | `false` | `true` |
-| **Sub-letting agreement** | `subletting_agreement` | `contract` | `true` | `true` | `false` | `true` |
-| **Rental agreement amendment**| `rental_agreement_amendment` | `contract` | `true` | `true` | `false` | `true` |
-| **Rent receipt** | `rent_receipt` | `letter` | `false` | `true` | `true` | `true` |
-| **Rent invoice** | `rent_invoice` | `letter` | `false` | `true` | `true` | `true` |
-| **Late payment letter** | `late_payment_letter` | `letter` | `false` | `true` | `true` | `true` |
+| Name | Shortname | Type | Can be esigned | Can be sent via email | Can be sent via post | Can be updated
+|--|--|--|--|--|--|--|
+| **Rental agreement** | `rental_agreement` | `contract` | `true` | `true` | `false` | `true`
+| **Rent guarantee agreement** | `rental_guarantee_agreement` | `contract` | `true` | `true` | `false` | `true`
+| **Sub-letting agreement** | `subletting_agreement` | `contract` | `true` | `true` | `false` | `true`
+| **Rental agreement amendment**| `rental_agreement_amendment` | `contract` | `true` | `true` | `false` | `true`
+| **Rent receipt** | `rent_receipt` | `letter` | `false` | `true` | `true` | `true`
+| **Rent invoice** | `rent_invoice` | `letter` | `false` | `true` | `true` | `true`
+| **Late payment letter** | `late_payment_letter` | `letter` | `false` | `true` | `true` | `true`
 
 2. API routes
 
