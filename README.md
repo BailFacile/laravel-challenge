@@ -76,4 +76,4 @@ Have a function where you return the corresponding view (in HTML) for each docum
 #### PDF generation
 
 Every time a Document is saved, a PDF of the view should be generated and stored in a user specific folder.
-We suggest using (Browsershot)[https://github.com/spatie/browsershot] or (Laravel DomPDF)[https://github.com/barryvdh/laravel-dompdf].
+We suggest using [Browsershot](https://github.com/spatie/browsershot) or [Laravel DomPDF](https://github.com/barryvdh/laravel-dompdf).
