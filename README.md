@@ -32,42 +32,48 @@ Create RESTful API routes to :
 
 #### **List documents**
 
-**Parameters**
+**⚙️ Parameters**
 - Optional `user_id` filter
 - Optional DocumentType `slug` filter
 - Optional `created_at` and `updated_at` greater than filter
 - Limit to 10 results and support pagination
 
-**Response**
+**➡️ Response**
 An array of documents and pagination information. Each Document should return properties of its parent DocumentType along with the usual model columns
 
 #### **Create document**
 
-**Parameters**
+**⚙️ Parameters**
+
 - Required `user_id` parameter
 - Required DocumentType `slug` parameter
 
-**Response**
+**➡️ Response**
+
 Should return created Document
 
 #### **ESign document**
 
-**Parameters**
+**⚙️ Parameters**
+
 - Required `document_id` parameter
 - Make sure document can be Esigned
 - Once document is Esigned or Sent via post, it is locked and cannot be updated anymore
 
-**Response**
+**➡️ Response**
+
 Should return updated Document on success or failure is document is locked
 
 #### **Delete document**
 
-**Parameters**
+**⚙️ Parameters**
+
 - Required `document_id` parameter
 - Only document that exists can be deleted
 - Only document that are not locked can be deleted
 
-**Response**
+**➡️ Response**
+
 Should success or failure of request
 ## ⭐ Bonus
 
