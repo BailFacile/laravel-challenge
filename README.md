@@ -59,8 +59,8 @@ Should return created Document
 **⚙️ Parameters**
 
 - Required `document_id` parameter
-- Make sure document can be Esigned
-- Once document is Esigned or Sent via post, it is locked and cannot be updated anymore
+- Make sure Document can be Esigned
+- Once Document is Esigned or Sent via post, it is locked and cannot be updated anymore
 
 **➡️ Response**
 
@@ -71,14 +71,14 @@ Should return updated Document on success or failure if document is locked
 **⚙️ Parameters**
 
 - Required `document_id` parameter
-- Only document that are not locked can be deleted
+- Only documents that are not locked can be deleted
 
 **➡️ Response**
 
 Should return deleted Document on success or failure of request
 ## ⭐ Bonus
 
-#### Each document type should have corresponding blade template (view)
+#### Each DocumentType should have corresponding blade template (view)
 
 Each DocumentType should have a specific blade template (view) linked to it. Insert random HTML in each template.
 Have a function where you return the corresponding view (in HTML) for each document.
