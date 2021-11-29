@@ -33,12 +33,14 @@ Create RESTful API routes to :
 #### 1. List documents
 
 **⚙️ Parameters**
+
 - Optional `user_id` filter
 - Optional DocumentType `slug` filter
 - Optional `created_at` and `updated_at` greater than filter
 - Limit to 10 results and support pagination
 
 **➡️ Response**
+
 An array of documents and pagination information. Each Document should return properties of its parent DocumentType along with the usual model columns
 
 #### 2. Create document
