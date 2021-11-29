@@ -48,26 +48,26 @@ Documents belong to a user, are of a specific document_type and can usually be u
 Create RESTful API routes to :
 
 #### **List documents**
--- Optional `user_id` filter
--- Optional `document_type` filter
--- Optional `created_at` and `updated_at` greated than filter
--- Limit to 10 results and support pagination
--- Each Document should return properties of its parent DocumentType along with the usual model columns.
+- Optional `user_id` filter
+- Optional `document_type` filter
+- Optional `created_at` and `updated_at` greated than filter
+- Limit to 10 results and support pagination
+- Each Document should return properties of its parent DocumentType along with the usual model columns.
 
 #### **Create document**
--- Required `user_id` parameter
--- Required `document_type` parameter
--- Should return created Document
+- Required `user_id` parameter
+- Required `document_type` parameter
+- Should return created Document
 
 #### **ESign document**
--- Required `document_id` parameter
--- Make sure document can be Esigned
--- Once document is Esigned or Sent via post, it is locked and cannot be updated anymore
--- Should return updated Document
+- Required `document_id` parameter
+- Make sure document can be Esigned
+- Once document is Esigned or Sent via post, it is locked and cannot be updated anymore
+- Should return updated Document
 
 #### **Delete document**
--- Required `document_id` parameter
--- Only document that are not locked can be deleted
--- Return success or failure of request
+- Required `document_id` parameter
+- Only document that are not locked can be deleted
+- Return success or failure of request
 
 ## Bonus
