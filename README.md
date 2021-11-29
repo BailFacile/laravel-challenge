@@ -1,7 +1,7 @@
 
 [![BailFacile](https://www.bailfacile.fr/img/logo_email.png)](https://www.bailfacile.fr)
 
-[BailFacile](https://www.bailfacile.fr) is an online property management platform serving French landlords. We are building a super app for landlords assisting them in the daily management of long-term rentals : draft and e-sign compliant documents, record payments and outgoings and manage tenant relationships, 100% digitally and for a reasonable cost.
+*[BailFacile](https://www.bailfacile.fr) is an online property management platform serving French landlords. We are building a super app for landlords assisting them in the daily management of long-term rentals : draft and e-sign compliant documents, record payments and outgoings and manage tenant relationships, 100% digitally and for a reasonable cost.*
 # BailFacile Laravel Challenge
 ## Some context...
 ### Why this challenge
