@@ -3,7 +3,7 @@
 
 *[BailFacile](https://www.bailfacile.fr) is an online property management platform serving French landlords. We are building a super app for landlords assisting them in the daily management of long-term rentals : draft and e-sign compliant documents, record payments and outgoings and manage tenant relationships, 100% digitally and for a reasonable cost.*
 # BailFacile Laravel Challenge
-## Some context...
+## ❓ Some context...
 ### Why this challenge
 
 This coding challenge is designed to assess skills of candidates in backend application development. It is language/framework agnostic, but some instructions are specific for [Laravel](https://www.laravel.com), since it is the technology we use (Laravel with PHP 8).
@@ -20,7 +20,7 @@ Your submission should include migrations and seeders with fake data (for users 
 
 You are free (and even encouraged) to use third-party packages if relevant. If you do, you should explain in your notes why you think each specific package is the best available one for the job.
 
-## Challenge
+## 🏁 Challenge
 
 ### 1. Documents and Document types
 
@@ -32,13 +32,13 @@ Documents can usually be updated until they esigned or sent via post.
   
 | Name | Slug | Format | Can be esigned | Can be sent via email | Can be sent via post | Can be updated
 |--|--|--|--|--|--|--|
-| **Rental agreement** | `rental_agreement` | `contract` | `true` | `true` | `false` | `true`
-| **Rent guarantee agreement** | `rental_guarantee_agreement` | `contract` | `true` | `true` | `false` | `true`
-| **Sub-letting agreement** | `subletting_agreement` | `contract` | `true` | `true` | `false` | `true`
-| **Rental agreement amendment**| `rental_agreement_amendment` | `contract` | `true` | `true` | `false` | `true`
-| **Rent receipt** | `rent_receipt` | `letter` | `false` | `true` | `true` | `true`
-| **Rent invoice** | `rent_invoice` | `letter` | `false` | `true` | `true` | `true`
-| **Late payment letter** | `late_payment_letter` | `letter` | `false` | `true` | `true` | `true`
+| **Rental agreement** | `rental_agreement` | `contract` | ✅ | ✅ | ❌ | ✅
+| **Rent guarantee agreement** | `rental_guarantee_agreement` | `contract` | ✅ | ✅ | ❌ | ✅
+| **Sub-letting agreement** | `subletting_agreement` | `contract` | ✅ | ✅ | ❌ | ✅
+| **Rental agreement amendment**| `rental_agreement_amendment` | `contract` | ✅ | ✅ | ❌ | ✅
+| **Rent receipt** | `rent_receipt` | `letter` | ❌ | ✅ | ✅ | ✅
+| **Rent invoice** | `rent_invoice` | `letter` | ❌ | ✅ | ✅ | ✅
+| **Late payment letter** | `late_payment_letter` | `letter` | ❌ | ✅ | ✅ | ✅
 
 ### 2. API routes
 
@@ -67,7 +67,7 @@ Create RESTful API routes to :
 - Only document that are not locked can be deleted
 - Return success or failure of request
 
-## Bonus
+## ⭐ Bonus
 
 #### Each document type should have corresponding blade template (view)
 
