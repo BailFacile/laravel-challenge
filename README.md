@@ -24,16 +24,13 @@ You are free (and even encouraged) to use third-party packages if relevant. If y
 
 ### 1. Documents and Document types
 
-Design a system where users can own different types of documents each with specific properties. 
-You should separate Documents (which can be owned by one user, is of a specific type) from DocumentTypes (which are unique and contain specific properties).
-
 #### Documents
 
-Documents belong to a user, are of a specific document_type and can usually be updated until they get esigned or sent via post.
-
+Design a system where users can own different types of documents, each document having a specific document types.
+Documents can usually be updated until they esigned or sent via post.
 #### Available DocumentTypes
   
-| Name | Shortname | Type | Can be esigned | Can be sent via email | Can be sent via post | Can be updated
+| Name | Slug | Format | Can be esigned | Can be sent via email | Can be sent via post | Can be updated
 |--|--|--|--|--|--|--|
 | **Rental agreement** | `rental_agreement` | `contract` | `true` | `true` | `false` | `true`
 | **Rent guarantee agreement** | `rental_guarantee_agreement` | `contract` | `true` | `true` | `false` | `true`
@@ -49,21 +46,21 @@ Create RESTful API routes to :
 
 #### **List documents**
 - Optional `user_id` filter
-- Optional `document_type` filter
+- Optional DocumentType `slug` filter
 - Optional `created_at` and `updated_at` greated than filter
 - Limit to 10 results and support pagination
 - Each Document should return properties of its parent DocumentType along with the usual model columns.
 
 #### **Create document**
 - Required `user_id` parameter
-- Required `document_type` parameter
+- Required DocumentType `slug` parameter
 - Should return created Document
 
 #### **ESign document**
 - Required `document_id` parameter
 - Make sure document can be Esigned
 - Once document is Esigned or Sent via post, it is locked and cannot be updated anymore
-- Should return updated Document
+- Should return updated Document on success or failure is document is locked
 
 #### **Delete document**
 - Required `document_id` parameter
@@ -71,3 +68,12 @@ Create RESTful API routes to :
 - Return success or failure of request
 
 ## Bonus
+
+#### Each document type should have corresponding blade template (view)
+
+Each DocumentType should have a specific blade template (view) linked to it. Insert random HTML in each template.
+Have a function where you return the corresponding view (in HTML) for each document.
+#### PDF generation
+
+Every time a Document is saved, a PDF of the view should be generated and stored in a user specific folder.
+We suggest using (Browsershot)[https://github.com/spatie/browsershot] or (Laravel DomPDF)[https://github.com/barryvdh/laravel-dompdf].
