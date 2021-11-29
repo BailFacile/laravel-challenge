@@ -13,7 +13,7 @@ This coding challenge is designed to assess the skills of candidates in backend 
 #### Documents
 
 Design a system where users can own different types of documents, each document having a specific document type.
-Documents can usually be updated until they are esigned or sent via post.
+Documents can be updated until they are esigned or sent via post.
 #### Available DocumentTypes
   
 | Name | Slug | Format | Can be esigned | Can be sent via email | Can be sent via post | Can be updated
@@ -89,7 +89,7 @@ We suggest using [Browsershot](https://github.com/spatie/browsershot) or [Larave
 
 ## 🧪 How to proceed
 
-- Start from a [clean Laravel app](https://laravel.com/docs/8.x/installation) (or your framework of choice) and follow the instructions below.
+- Start from a [clean Laravel app](https://laravel.com/docs/8.x/installation) and follow the instructions below.
 
 - Your code should be as clean as possible, tested and use Laravel conventions/building blocks.
 
