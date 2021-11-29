@@ -24,12 +24,12 @@ This coding challenge is designed to assess the skills of candidates in backend 
 
 ## 🏁 Challenge
 
-### 1. Documents and Document types
+### 1. Documents and DocumentTypes
 
 #### Documents
 
-Design a system where users can own different types of documents, each document having a specific document types.
-Documents can usually be updated until they esigned or sent via post.
+Design a system where users can own different types of documents, each document having a specific document type.
+Documents can usually be updated until they are esigned or sent via post.
 #### Available DocumentTypes
   
 | Name | Slug | Format | Can be esigned | Can be sent via email | Can be sent via post | Can be updated
