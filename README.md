@@ -99,4 +99,4 @@ We suggest using [Browsershot](https://github.com/spatie/browsershot) or [Larave
 
 - **Your submission should include unit tests, migrations and seeders with fake data (for users and documents) and existing data (document types provided above).**
 
-- **Please attach a read mefile with any relevant comments, instructions, explanations to your final submission.**
+- **Please attach a read me file with any relevant comments, instructions, explanations to your final submission.**
