@@ -6,6 +6,16 @@
 ## ❓ Why this challenge
 
 This coding challenge is designed to assess the skills of candidates in backend application development. It is language/framework agnostic, but some instructions are specific for [Laravel](https://www.laravel.com), since it is the technology we use (Laravel with PHP 8).
+
+## 🧑‍💻 Instructions for candidates
+
+Depending on the role you are being interviewed for, the instructions are a bit different.
+### 1. For a fullstack role
+
+For fullstack developers, please only complete section 1 (Documents and DocumentTypes) and routes 1 and 2 of section 2 (API routes).
+### 2. For a backend role
+
+For backend developers, you are encouraged to complete as much as possible of this test to demonstrate your backend skills.
 ## 🏁 Challenge
 
 ### 1. Documents and DocumentTypes
